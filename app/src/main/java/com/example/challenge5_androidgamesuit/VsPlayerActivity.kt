@@ -92,7 +92,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.p1win))
                     Log.d(TAG, "Pemain 2 Memilih Batu" )
                     handler.postDelayed({
-                        cpuLose()
+                        cpuWin()
                     },2000)
                 } else if (p2choice == getString(R.string.paper)) {
                     iv_com.setImageDrawable(getResources().getDrawable(R.drawable.kertas));
@@ -100,7 +100,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.draw))
                     Log.d(TAG, "Pemain 2 Memilih Kertas" )
                     handler.postDelayed({
-                        cpuWin()
+                        cpuDraw()
                     },2000)
                 } else {
                     iv_com.setImageDrawable(getResources().getDrawable(R.drawable.gunting));
@@ -108,7 +108,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.p2win))
                     Log.d(TAG, "Pemain 2 Memilih Gunting" )
                     handler.postDelayed({
-                        cpuDraw()
+                        cpuLose()
                     },2000)
                 }
             },5000)
@@ -126,7 +126,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.draw))
                     Log.d(TAG, "Pemain 2 Memilih Batu" )
                     handler.postDelayed({
-                        cpuLose()
+                        cpuDraw()
                     },2000)
                 } else if (p2choice == getString(R.string.paper)) {
                     iv_com.setImageDrawable(getResources().getDrawable(R.drawable.kertas));
@@ -134,7 +134,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.p2win))
                     Log.d(TAG, "Pemain 2 Memilih Kertas" )
                     handler.postDelayed({
-                        cpuWin()
+                        cpuLose()
                     },2000)
                 } else {
                     iv_com.setImageDrawable(getResources().getDrawable(R.drawable.gunting));
@@ -142,7 +142,7 @@ class VsPlayerActivity : AppCompatActivity() {
                     iv_vs.setImageDrawable(getResources().getDrawable(R.drawable.p1win))
                     Log.d(TAG, "Pemain 2 Memilih Gunting" )
                     handler.postDelayed({
-                        cpuDraw()
+                        cpuWin()
                     },2000)
                 }
             },5000)
